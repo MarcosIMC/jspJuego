@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>practicaJuegosExamen</display-name>
+  <servlet>
+    <description>
+		</description>
+    <display-name>JuegosServlet</display-name>
+    <servlet-name>JuegosServlet</servlet-name>
+    <servlet-class>Servlet.JuegosServlet</servlet-class>
+    <init-param>
+      <param-name>base</param-name>
+      <param-value>/practicaJuegosExamen/juegos</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jdbcDriver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbURL</param-name>
+      <param-value>jdbc:mysql://localhost:3306/pruebaexamen</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbUserName</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>dbPassword</param-name>
+      <param-value></param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JuegosServlet</servlet-name>
+    <url-pattern>/juegos/*</url-pattern>
+  </servlet-mapping>
+</web-app>
